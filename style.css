@@ -1,0 +1,88 @@
+body {
+    background: #ffbc34; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2 { 
+    font-size : 2rem ; 
+    text-align: center;
+
+}
+
+p { 
+    font-size :0.9rem ; 
+    color :  black ; 
+    font-weight : 600 ; 
+    padding: 10px;
+
+}
+
+.overlay-screen {
+
+    height: 100% ; 
+    width: 0 ; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color : #070142;
+    background-color:  #070120 ; 
+    overflow: hidden;
+    transition : 0.5s ;
+    
+}
+
+.overlay-position { 
+
+position: relative; 
+top: 25% ;
+text-align: center;
+width: 100%; 
+margin-top: 35px; 
+
+}
+
+.overlay-position a {
+
+    display: block;
+    padding: 10px;
+    text-decoration :  none ; 
+    font-size : 3rem; 
+    color : white ; 
+    transition  : 0.3s; 
+   text-transform: uppercase;
+   
+
+}
+
+
+
+
+.overlay-position a:hover {
+    color : #ffbc34; 
+    transform : rotate(15deg); 
+}
+
+
+.overlay-screen  .clobut {
+    position : absolute; 
+    font-size : 3.5rem ; 
+    color: white; 
+    top:  45px ; 
+    right : 70px; 
+    
+
+}
+
+@media screen and (max-width:450px) {
+    .overlay-position a {
+        font-size: 1.2rem; 
+    }
+    .overlay.screen .clobut {
+        font-size: 1.5rem; 
+        top: 15px; 
+        right : 30px; 
+
+    }
+}
